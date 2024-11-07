@@ -7,7 +7,7 @@ let API_KEY = import.meta.env.VITE_API_KEY;
 const Currency = () => {
   const [amount, setAmount] = useState(1);
   const [fromCurrency, setFromCurrency] = useState("USD");
-  const [toCurrency, setToCurrency] = useState("TRY");
+  const [toCurrency, setToCurrency] = useState("EUR");
   const [result, setResult] = useState(0);
 
   const exchange = async () => {
@@ -47,7 +47,37 @@ const Currency = () => {
           >
             <option>USD</option>
             <option>EUR</option>
+            <option>JPY</option>
+            <option>BGN</option>
+            <option>CZK</option>
+            <option>DKK</option>
+            <option>GBP</option>
+            <option>HUF</option>
+            <option>PLN</option>
+            <option>RON</option>
+            <option>SEK</option>
+            <option>CHF</option>
+            <option>ISK</option>
+            <option>NOK</option>
+            <option>HRK</option>
+            <option>RUB</option>
             <option>TRY</option>
+            <option>AUD</option>
+            <option>BRL</option>
+            <option>CAD</option>
+            <option>CNY</option>
+            <option>HKD</option>
+            <option>IDR</option>
+            <option>ILS</option>
+            <option>INR</option>
+            <option>KRW</option>
+            <option>MXN</option>
+            <option>MYR</option>
+            <option>NZD</option>
+            <option>PHP</option>
+            <option>SGD</option>
+            <option>THB</option>
+            <option>ZAR</option>
           </select>
         </div>
 
@@ -78,9 +108,40 @@ const Currency = () => {
             onChange={(e) => setToCurrency(e.target.value)}
             className="h-11 p-2 rounded-r-lg border border-gray-300 focus:ring-gray-900 focus:border-gray-900 focus:outline-none"
           >
-            <option>TRY</option>
-            <option>USD</option>
             <option>EUR</option>
+            <option>USD</option>
+
+            <option>JPY</option>
+            <option>BGN</option>
+            <option>CZK</option>
+            <option>DKK</option>
+            <option>GBP</option>
+            <option>HUF</option>
+            <option>PLN</option>
+            <option>RON</option>
+            <option>SEK</option>
+            <option>CHF</option>
+            <option>ISK</option>
+            <option>NOK</option>
+            <option>HRK</option>
+            <option>RUB</option>
+            <option>TRY</option>
+            <option>AUD</option>
+            <option>BRL</option>
+            <option>CAD</option>
+            <option>CNY</option>
+            <option>HKD</option>
+            <option>IDR</option>
+            <option>ILS</option>
+            <option>INR</option>
+            <option>KRW</option>
+            <option>MXN</option>
+            <option>MYR</option>
+            <option>NZD</option>
+            <option>PHP</option>
+            <option>SGD</option>
+            <option>THB</option>
+            <option>ZAR</option>
           </select>
         </div>
       </div>
