@@ -2,7 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 
 let BASE_URL = "https://api.freecurrencyapi.com/v1/latest";
-const API_KEY = import.meta.env.VITE_API_KEY;
+let API_KEY = import.meta.env.VITE_API_KEY;
 
 const Currency = () => {
   const [amount, setAmount] = useState(1);
